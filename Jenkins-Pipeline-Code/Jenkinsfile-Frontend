@@ -84,12 +84,12 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/karthickjd/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
+                git credentialsId: 'GITHUB', url: 'https://github.com/karthickjd/-End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
             }
         }
         stage('Update Deployment file') {
             environment {
-                GIT_REPO_NAME = "End-to-End-Kubernetes-Three-Tier-DevSecOps-Project"
+                GIT_REPO_NAME = "-End-to-End-Kubernetes-Three-Tier-DevSecOps-Project"
                 GIT_USER_NAME = "karthickjd"
             }
             steps {
